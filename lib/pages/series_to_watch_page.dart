@@ -8,6 +8,8 @@ class SeriesToWatchPage extends StatefulWidget {
 class SeriesToWatchPageState extends State<SeriesToWatchPage> {
   @override
   Widget build(BuildContext context) {
-    return new Text("Series to watch!");
+    return new Material(
+      color: Colors.lightBlueAccent,
+    );
   }
 }
