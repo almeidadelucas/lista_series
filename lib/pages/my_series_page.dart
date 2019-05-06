@@ -5,13 +5,13 @@ import "./watched_series_page.dart";
 
 class MySeriesPage extends StatefulWidget {
   @override
-  State createState() => new MySeriesPageState();
+  State createState() => MySeriesPageState();
 }
 
 class MySeriesPageState extends State<MySeriesPage> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return new Material(
+    return Material(
       child: DefaultTabController(
         length: 2,
         child: Scaffold(
@@ -27,8 +27,8 @@ class MySeriesPageState extends State<MySeriesPage> with SingleTickerProviderSta
           ),
           body: TabBarView(
             children: [
-              new WatchedSeriesPage(),
-              new SeriesToWatchPage()
+              WatchedSeriesPage(),
+              SeriesToWatchPage()
             ],
           ),
         ),
