@@ -26,12 +26,16 @@ class WatchedSeriesPageState extends State < WatchedSeriesPage > {
     showDialog(
       context: context,
       child: SimpleDialog(
-        title: Center(child: Text("Adicione uma série")),
+        title: Center(child: Text("Adicione uma série")),      
+        shape: RoundedRectangleBorder(
+          side: BorderSide(style: BorderStyle.none),
+          borderRadius: BorderRadius.circular(10)
+        ),
         children: < Widget > [
           Padding(padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
             child: Column(
               children: < Widget > [
-                TextField(autofocus: true, controller: _seriesNameToAdd, decoration: InputDecoration(border: OutlineInputBorder(), labelText: "Título:")),
+                TextField(autofocus: true, controller: _seriesNameToAdd, decoration: InputDecoration(border: OutlineInputBorder(), labelText: "Título")),
                 Padding(padding: EdgeInsets.symmetric(vertical: 8.0)),
                 Rate(rate: 0, editable: true, onChange: (rate) => setState(() => _seriesRateToAdd = rate)),
                 IconButton(icon: Icon(Icons.done), color: Color.fromRGBO(130, 0, 11, 1.0), iconSize: 30.0, onPressed: () {
