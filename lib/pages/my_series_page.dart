@@ -8,7 +8,7 @@ class MySeriesPage extends StatefulWidget {
   State createState() => MySeriesPageState();
 }
 
-class MySeriesPageState extends State<MySeriesPage> with SingleTickerProviderStateMixin {
+class MySeriesPageState extends State<MySeriesPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
