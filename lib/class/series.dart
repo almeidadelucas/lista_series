@@ -2,7 +2,6 @@ class Series {
   final String _title;
   final bool _watched;
   final int _rate;  
-  final int a;
 
   Series(this._title, this._rate, this._watched);
 
